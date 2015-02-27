@@ -14,12 +14,15 @@
     </div>
     <div id="login">
       <div id="user">
-        <p>
-          Username
-        </p>
-        <input type="text" name="Username" value="your username">
-        <input type="text" name="Password" value="your password">
-        <input type="submit" name="enter" value="login">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="Username" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+          <input name="Password" type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+        </div>
+        <input class="btn btn-default" type="submit" name="enter" value="Login">
       </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
