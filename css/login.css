@@ -1,5 +1,6 @@
 #container {
   display: -webkit-flex;
+<<<<<<< HEAD
   position: absolute;
   width: 70%;
   height:280px;
@@ -9,6 +10,15 @@
   right:0;
   margin: auto;
   border: 1px #666 dashed;
+=======
+
+position:absolute; width:70%; height:280px;
+    top:0; bottom:0; left:0; right:0; margin:auto;
+  border: 1px #666 dashed;
+  
+ 
+  
+>>>>>>> 4531f5f28620cd14d3d724d435e8e733b4e3ed29
 }
 
 #rules {
