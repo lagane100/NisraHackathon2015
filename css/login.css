@@ -1,13 +1,16 @@
 #container {
   display: -webkit-flex;
+
+position:absolute; width:70%; height:280px;
+    top:0; bottom:0; left:0; right:0; margin:auto;
   border: 1px #666 dashed;
-  width: 800px;
-  margin: 0 auto;
+  
+ 
+  
 }
 
 #rules {
   border-style: double;
-  float: left;
   -webkit-flex: 1;
           flex: 1;
   margin-top: 10px;
