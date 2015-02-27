@@ -1,7 +1,18 @@
 #container {
   display: -webkit-flex;
+<<<<<<< HEAD
 position:absolute; width:70%; height:280px;
     top:0; bottom:0; left:0; right:0; margin:auto;
+=======
+  position: absolute;
+  width: 70%;
+  height:280px;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+>>>>>>> origin/master
   border: 1px #666 dashed;
 }
 
@@ -20,18 +31,27 @@ position:absolute; width:70%; height:280px;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
+
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-#user {
-  width: 250px;
+#user-wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
-#div-username {
-  margin-top: 5px;
-  margin-bottom: 5px
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#div-password {
-  margin-top: 5px;
-  margin-bottom: 5px;
+#loginBtn {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
