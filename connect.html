@@ -4,13 +4,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Account page >///<</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/createAccount.css">
 </head>
 
 <body>
- <div id="Information">
-	<p>Enter Your Information</p>
-    <div id="Username">
+ <div id="container">
+    <div id="userSignUp-wrapper">
+    	<p>Enter Your Information</p>
 		<div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
             <input name="Username" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
@@ -23,25 +23,35 @@
             <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
             <input name="confirm" type="text" class="form-control" placeholder="confirm" aria-describedby="basic-addon1">
         </div>
-          <input class="btn btn-default" type="submit" name="enter" value="Login">
-	</div>
 	<div id="Gender">
-	<p>Choose Gender :</p>
-		<div id="sex">
-			<input type="radio" name="sex" value="male" />Male
-			<input type="radio" name="sex" value="female" />Female
+	<p>Choose Gender:</p>
+		<div id="gender-radio">
+			<div class="radio">
+      			<label><input type="radio" name="sex" value="male">Male</label>
+    		</div>
+    		<div class="radio">
+      			<label><input type="radio" name="sex" value="female">Female</label>
+    		</div>
 		</div>
 	</div>
-	<div id="racial">
-	<p>Choose racial:</p>
-		<input type="radio" name="racial" value="human" />
-		<p>Human</p>
-		<input type="radio" name="racial" value="god" />
-		<p>God</p>
-		<input type="radio" name="racial" value="zerg" />
-		<p>Zerg</p>
+	<div id="Racial">
+	<p>Choose Racial:</p>
+		<div id="racial-radio">
+			<div class="radio">
+      			<label><input type="radio" name="racial" value="human">Human</label>
+    		</div>
+    		<div class="radio">
+      			<label><input type="radio" name="racial" value="god">God</label>
+    		</div>
+    		<div class="radio">
+      			<label><input type="radio" name="racial" value="zerg">Zerg</label>
+    		</div>
+		</div>
 	</div>
-	<input class="btn btn-default" type="submit" name="enter" value="Login">
+		<div id="signUpBtn">
+			<input class="btn btn-default" type="submit" name="enter" value="Sign Up">
+		</div>
+	</div>
 </div>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
