@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Account page >///<</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+ <div id="Imformation">
+	<p>Enter Your Imformation</p>
+    <div id="Username">
+		<div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="Username" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+		<div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+            <input name="Password" type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+        </div>
+		<div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+            <input name="confirm" type="text" class="form-control" placeholder="confirm" aria-describedby="basic-addon1">
+        </div>
+          <input class="btn btn-default" type="submit" name="enter" value="Login">
+	</div>
+	<div id="Gender">
+	<p>Choose Gender :</p>
+		<div id="sex">
+			<input type="radio" name="sex" value="male" />Male
+			<input type="radio" name="sex" value="female" />Female
+		</div>
+	</div>
+	<div id="racial">
+	<p>Choose racial:</p>
+		<input type="radio" name="racial" value="human" />
+		<p>Human</p>
+		<input type="radio" name="racial" value="elf" />
+		<p>Elf</p>
+		<input type="radio" name="racial" value="orc" />
+		<p>Orc</p>
+	</div>
+	<input class="btn btn-default" type="submit" name="enter" value="Login">
+</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
