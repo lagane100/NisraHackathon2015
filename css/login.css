@@ -1,5 +1,9 @@
 #container {
   display: -webkit-flex;
+<<<<<<< HEAD
+position:absolute; width:70%; height:280px;
+    top:0; bottom:0; left:0; right:0; margin:auto;
+=======
   position: absolute;
   width: 70%;
   height:280px;
@@ -8,6 +12,7 @@
   left:0;
   right:0;
   margin: auto;
+>>>>>>> origin/master
   border: 1px #666 dashed;
 }
 
