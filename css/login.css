@@ -1,0 +1,16 @@
+#rules{
+  border-style: double;
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: 600px;
+  height: 600px;
+}
+
+#login{
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 600px;
+  height: 600px;
+}
