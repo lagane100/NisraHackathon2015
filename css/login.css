@@ -1,16 +1,38 @@
-#rules{
-  border-style: double;
-  position: absolute;
-  left: 20px;
-  top: 100px;
-  width: 600px;
-  height: 600px;
+#container {
+  display: -webkit-flex;
+  border: 1px #666 dashed;
+  width: 800px;
+  margin: 0 auto;
 }
 
-#login{
-  position: absolute;
-  right: 20px;
-  top: 100px;
-  width: 600px;
-  height: 600px;
+#rules {
+  border-style: double;
+  float: left;
+  -webkit-flex: 1;
+          flex: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#login {
+  -webkit-flex: 1;
+          flex: 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#user {
+  width: 250px;
+}
+
+#div-username {
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+
+#div-password {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
