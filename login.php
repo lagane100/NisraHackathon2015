@@ -1,7 +1,7 @@
 <?php
   require 'connect.php';
-  $id = mysql_real_escape_string($_POST["id"]);
-  $passwd = mysql_real_escape_string($_POST["passwd"]);
+  $id = 123;//mysql_real_escape_string($_POST["id"]);
+  $passwd = 123;//mysql_real_escape_string($_POST["passwd"]);
   $Correct = array("Mode"=>'SUCCESS');
   $Wrong = array("Mode"=>'ERROR');
   $result = mysql_query("SELECT account,password,UID FROM regist WHERE account = '$id' and password = '$passwd'");
@@ -13,7 +13,7 @@
     header("Location: login.html");
   }
   else{
-    echo JSON_encode($Correct);
+    echo JSON_encode($Wrong);
     header("Location: login.html");
   }
   mysql_close($con);
