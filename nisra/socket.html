@@ -19,7 +19,7 @@
         //});
         $('#enter').on('click', function(){
           socket.emit('client_data', {
-            'letter': String.fromCharCode('#text'.charCode)
+            'letter': "text"
           });
         });
       });
