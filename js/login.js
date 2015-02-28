@@ -10,8 +10,10 @@ $(document).ready(function(){
       dataType: 'json',
       async: false,
       success: function(data) {
-        alert(data);
-      }
+        alert("123");
+      }.complete({
+        alert("1234");
+      });
     });
   });
 });
