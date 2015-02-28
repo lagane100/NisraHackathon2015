@@ -17,9 +17,9 @@
         //    'letter': String.fromCharCode(e.charCode)
         //  });
         //});
-        $('#enter').on('click', function(e){
+        $('#enter').on('click', function(){
           socket.emit('client_data', {
-            'letter': String.fromCharCode(e.charCode)
+            'letter': $('#text')[0].value
           });
         });
       });
