@@ -9,11 +9,11 @@
   if (count($row) != 1){
     setcookie("username", $id);
     setcookie("uid", $row["UID"]);
-    echo JSON_encode($Correct);
+    echo JSON_encode($Correct["Mode"]);
     //header("Location: login.html");
   }
   else{
-    echo JSON_encode($Wrong);
+    echo JSON_encode($Wrong["Mode"]);
     //header("Location: login.html");
   }
   mysql_close($con);

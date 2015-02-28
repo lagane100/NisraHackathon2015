@@ -10,7 +10,7 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        alert(data);
+        alert("123");
       },
       error: function(data) {
         alert(data);
