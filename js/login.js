@@ -12,7 +12,7 @@ $(document).ready(function(){
       success: function(data) {
         if(data["Mode"]==SUCCESS){
           alert("welcome back");
-          window.location.replace("roomList.html");
+          //window.location.replace("roomList.html");
         }
         else{
           alert("Wrong password or account");
