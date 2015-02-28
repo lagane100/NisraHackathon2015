@@ -4,6 +4,7 @@ $(document).ready(function(){
       type: "POST",
       url: "login.php",
       dataType:'json',
+      async: false,
       data: {
         id: ('#Username')[0].value,
         passwd: ('#Password')[0].value
