@@ -1,0 +1,44 @@
+#container {
+	background-color: pink;
+	width: 100%;
+	position:absolute;
+}
+
+.left-div {
+	float: left;
+	width: 40%;
+	margin: auto;
+}
+
+.right-div {
+	float: left;
+	width: 60%;
+	margin: auto;
+}
+
+#div1 {
+	clear: both;
+}
+
+#B ul li {
+　display:inline;
+}
+#div2 {
+	background-color: orange;
+}
+
+#div3 {
+	background-color: lightblue;
+}
+
+#blood{
+	background-color: red;
+}
+#exp{
+	background-color: yellow;
+}
+#userdata { 
+
+margin-right:1500px; 
+
+}
