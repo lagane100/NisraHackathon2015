@@ -14,7 +14,7 @@
       });
 
       $(document).ready(function(){
-        $('#enter').on('click', function(){
+        $('#loginBtn').on('click', function(){
           socket.emit('client_data', {
             'letter': $('#text')[0].value
           });
@@ -37,7 +37,8 @@
     <div id="B">
       <p>Enter Your Message</p>
       <div class="input-group" class = "content" >
-        <div class="fl leftcol"><input name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
+        <div class="fl leftcol">
+          <input id="text" name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
         </div>
         <div class="fr rightcol"><input class="B" id="loginBtn" type="submit" name="enter" value="Enter"></li> </div>
 
