@@ -7,9 +7,10 @@ $(document).ready(function(){
         id: ('#Username')[0].value,
         passwd: ('#Password')[0].value
       },
-      success(function(data){
+      dataType: 'json',
+      success: function(data) {
         alert(data);
-      });
+      }
     });
   });
 });
