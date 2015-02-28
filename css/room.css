@@ -1,18 +1,19 @@
 #container {
-	background-color: pink;
 	width: 100%;
+	padding: 10%;
 	position:absolute;
 }
 
 .left-div {
 	float: left;
 	width: 40%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .right-div {
 	float: left;
 	width: 60%;
+	padding-left: 2%;
 	margin: auto;
 }
 
@@ -20,24 +21,15 @@
 	clear: both;
 }
 
-#div2 {
-	background-color: orange;
-}
-
-#div3 {
-	background-color: lightblue;
-}
-
-#blood{
+#blood {
 	background-color: red;
 }
-#exp{
+#exp {
 	background-color: yellow;
 }
+
 #userdata {
-
-margin-right:1500px;
-
+	margin-right:1500px;
 }
 
 h2.pos_right{
