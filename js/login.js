@@ -10,7 +10,7 @@ $(document).ready(function(){
       },
       success: function(data) {
         alert("test");
-      }
+      },
       error: function() {
         alert("1234");
       }
