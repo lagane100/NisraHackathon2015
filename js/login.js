@@ -10,7 +10,8 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        alert("123");
+        alert("welcome back");
+        window.location.assign("roomList.html");
       },
       error: function(data) {
         alert(data);
