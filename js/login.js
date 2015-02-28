@@ -3,12 +3,14 @@ $(document).ready(function(){
     $.ajax({
       type: "POST",
       url: "login.php",
+      dataType:'json',
       data: {
         id: ('#Username')[0].value,
         passwd: ('#Password')[0].value
-      }.complete(function(data){
-        alert(data);
-      })
+      },
+      success: function(data) {
+        alert("test");
+      }
     });
   });
 });
