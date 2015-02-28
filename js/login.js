@@ -1,4 +1,9 @@
 $(document).ready(function(){
+<<<<<<< HEAD
+    $(".panel").css("min-height", $("#login").height());
+    $("#container").css("min-height", $(".panel").height());
+});
+=======
   $('#loginBtn').on('click', function(){
     $.ajax({
       type: "POST",
@@ -17,3 +22,4 @@ $(document).ready(function(){
     });
   });
 });
+>>>>>>> f552a337942cb0706400f7ef6ed6b36aca0ecbdb
