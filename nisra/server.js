@@ -52,5 +52,5 @@ serv_io.sockets.on('connection', function(socket) {
 });
 
 function caculate(letter, mode){
-  
+
 }
