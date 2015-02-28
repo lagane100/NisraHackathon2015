@@ -20,6 +20,9 @@
 	clear: both;
 }
 
+#B ul li {
+　display:inline;
+}
 #div2 {
 	background-color: orange;
 }

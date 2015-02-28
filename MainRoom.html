@@ -5,18 +5,34 @@
 h2.pos_right
 {
 position:relative;
-left:800px
+left:600px
 
 }
-h4.pos_right
-{
-position:relative;
-left:800px
-
-}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.leftcolSup{width:450px;height:320px;}
+.leftcol{width:450px;height:40px;}
+.rightcol{width:90px;height:40px;}
+.main{height:1000px;background-color:blue;}
+.content{width:900px;margin:10px auto;}
+.cl{clear:both;}
 </style>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Information Page</title>
+   <script language="javascript">
+		 function showText(val)
+{
+  if (val)
+   document.all.RoomPassword.style.display = "inline";
+  else
+  {
+   document.all.RoomPassword.value = "";
+   document.all.RoomPassword.style.display = "none";
+  }
+}
+
+	</script>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/room.css">
 </head>
@@ -54,47 +70,40 @@ left:800px
     <div class="right-div">
       <div class="panel panel-default">
         <!-- Default panel contents -->
-        <div class="panel-heading">Panel heading</div>
-        <div class="panel-body">
-        <p>...</p>
-        </div>
+		<div class="fl leftcolSup">
+        <div class="panel-heading">聊天室</div>
+		</div>
+        <div class="panel-body" style="visibility:hidden">
+		</div>
+		
 
         <!-- Table -->
         <table class="table">
-          <tr>
-            <th>Room's name</th>
-            <th>Public/Private</th>
-            <th>Number of people</th>
-          </tr>
-          <tr>
-            <td>RoomA</td>
-            <td></td>
-            <td>3/7</td>
-          </tr>
-          <tr>
-            <td>RoomB</td>
-            <td>Private</td>
-            <td>1/10</td>
-          </tr>
+         
         </table>
 </div>
-    </div>
-<<<<<<< HEAD
-    </div>
+	<div id="B">
+		<p>Enter Your Message</p>
+		<div class="input-group" class = "content" >
+		<div class="fl leftcol"><input name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
+			</div>
+		<div class="fr rightcol"><input class="B" id="loginBtn" type="submit" name="enter" value="Enter"></li> </div>
+		
+		<input class="B" id="loginBtn" type="submit" name="answer" value="Answer"></li>
+		
+		<input class="B" id="loginBtn" type="submit" name="ask" value="Ask"></li>
 
-=======
-  </div>
-  <div id="ruleandlist">
-    <h5>遊戲規則</h5>
-    <h5>在線玩家</h5>
-	<div>
-		<h4 class="pos_right">輸入對話:</h2>
+		</div>
+		
+            
+        </div>
+		<input class="btn btn-default" id="loginBtn" type="submit" name="surrender " value="Surrender ">
+		
 	</div>
-  </div>
-  <div id="chatroom">
-    
->>>>>>> 0c9936381d9576e763dc5fc1209a7b29ac90e560
-  </div>
+    </div>
+	
+
+
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
