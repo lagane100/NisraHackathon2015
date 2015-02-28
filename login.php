@@ -10,11 +10,11 @@
     setcookie("username", $id);
     setcookie("uid", $row["UID"]);
     echo JSON_encode($Correct);
-    header("Location: login.html");
+    //header("Location: login.html");
   }
   else{
     echo JSON_encode($Wrong);
-    header("Location: login.html");
+    //header("Location: login.html");
   }
   mysql_close($con);
 ?>

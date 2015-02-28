@@ -10,10 +10,10 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        alert(data["Mode"]);
+        alert(data);
       },
       error: function(data) {
-        alert(data["Mode"]);
+        alert(data);
       }
     });
   });
