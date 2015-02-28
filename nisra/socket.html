@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://128.199.75.83/NisraHackathon/css/room.css">
+    <link rel="stylesheet" type="text/css" href="http://128.199.75.83/NisraHackathon/css/bootstrap.min.css">
+  </head>
+  <body>
+    <script>
+      var socket = io.connect();
+
+      socket.on('date', function(data) {
+        $('#date').text(data.date);
+      });
+
+      $(document).ready(function(){
+        $('#chat').on('click', function(){
+          socket.emit('client_data', {
+            'letter': $('#text')[0].value,
+            'mode': 0
+          });
+        });
+
+        $('#answer').on('click', function(){
+          socket.emit('client_data', {
+            'letter': $('#text')[0].value,
+            'mode': 1
+          });
+        });
+
+        $('#ask').on('click', function(){
+          socket.emit('client_data', {
+            'letter': $('#text')[0].value,
+            'mode': 2
+          });
+        });
+      });
+    </script>
+    <div id="date"></div>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="fl leftcolSup">
+        <div class="panel-heading">聊天室</div>
+      </div>
+      <div class="panel-body" style="visibility:hidden">
+      </div>
+      <!-- Table -->
+      <table class="table">
+
+      </table>
+    </div>
+    <div id="B">
+      <p>Enter Your Message</p>
+      <div class="input-group" class = "content" >
+        <div class="fl leftcol">
+          <input id="text" name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
+        </div>
+        <div class="fr rightcol"><input class="B" id="chat" type="submit" name="enter" value="Enter"></li> </div>
+
+        <input class="B" id="answer" type="submit" name="answer" value="Answer"></li>
+
+        <input class="B" id="ask" type="submit" name="ask" value="Ask"></li>
+
+      </div>
+    </div>
+    <script type="text/javascript" src="http://128.199.75.83/NisraHackathon/js/room.js"></script>
+    <script type="text/javascript" src="http://128.199.75.83/NisraHackathon/js/bootstrap.min.js"></script>
+  </body>
+</html>

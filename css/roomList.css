@@ -1,0 +1,42 @@
+#container {
+	width: 100%;
+	padding: 10%;
+	position:absolute;
+}
+
+.left-div {
+	float: left;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.right-div {
+	float: left;
+	width: 60%;
+	padding-left: 2%;
+	margin: auto;
+}
+
+#div1 {
+	clear: both;
+}
+
+#blood{
+	background-color: red;
+}
+#exp{
+	background-color: yellow;
+}
+
+.input-group {
+	margin: 5px auto;
+}
+
+.radio {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#pwd {
+	width: 200px;
+}
