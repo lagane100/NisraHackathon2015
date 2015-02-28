@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Information Page</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/roomList.css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-div">
+      <div id="div1" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">玩家資料</h3>
+          </div>
+          <div class="panel-body">
+          <div id="level">
+            <p>等級: 10</p>
+          </div>
+          <div id="racial">
+            <p>種族: 神</p>
+          </div>
+          <div id="status">
+            <p id="blood">100/100</p>
+            <p id="exp">250/450</p>
+          </div>
+          <div id="atk">
+            <p>攻擊力 3(+2)</p>
+          </div>
+        </div>
+      </div>
+      <div id="div2" class="panel with-nav-tabs panel-default">
+        <div class="panel-heading">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1default" data-toggle="tab">遊戲規則</a></li>
+            <li><a href="#tab2default" data-toggle="tab">在線玩家</a></li>
+          </ul>
+        </div>
+        <div class="panel-body">
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+            <div class="tab-pane fade" id="tab2default">Default 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-div">
+      <div id="div3" class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">聊天房間</div>
+        <div class="panel-body">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Create
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Create a room</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Room's name</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Number of people</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                  <div id="choosePrivacy">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Public
+                    </label>
+                  </div>
+                  <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Private
+                    <div id="pwd" class="input-group">
+                      <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input name="Password" type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                    </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+          <tr>
+              <th>Room's name</th>
+              <th>Public/Private</th>
+              <th>Number of people</th>
+          </tr>
+          <tr>
+            <td>RoomA</td>
+            <td></td>
+            <td>3/7</td>
+          </tr>
+          <tr>
+            <td>RoomB</td>
+            <td>Private</td>
+            <td>1/10</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap Form Helpers -->
+  <script src="js/bootstrap-formhelpers.min.js"></script>
+  <script type="text/javascript" src="js/roomList.js"></script>
+</body>
+</html>
