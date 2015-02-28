@@ -8,8 +8,8 @@ $(document).ready(function(){
       data: {
         id: ('#Username')[0].value,
         passwd: ('#Password')[0].value,
-        sex: $("input[name='sex'][type='radio']:checked").val();
-        racial: $("input[name='racial'][type='radio']:checked").val();
+        sex: $("input[name='sex'][type='radio']:checked").val(),
+        racial: $("input[name='racial'][type='radio']:checked").val()
       },
       success: function(data) {
         alert("123");
