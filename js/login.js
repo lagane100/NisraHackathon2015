@@ -10,7 +10,7 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        if(data["Mode"]==SUCCESS){
+        if(data["Mode"]=="SUCCESS"){
           alert("welcome back");
           //window.location.replace("roomList.html");
         }
