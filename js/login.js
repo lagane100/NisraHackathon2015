@@ -10,8 +10,14 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        alert("welcome back");
-        window.location.assign("roomList.html");
+        if(data["Mode"]==SUCCESS){
+          alert("welcome back");
+          window.location.assign("roomList.html");
+        }
+        else{
+          alert("Wrong password or account");
+          window.location.replace(window.location.href);
+        }
       },
       error: function(data) {
         alert(data);
