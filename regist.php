@@ -12,7 +12,7 @@
     mysql_query("INSERT INTO regist (sex, account, password, racial) VALUES ('$sex', '$id', '$passwd', '$racial')");
     echo "INSERT INTO regist (sex, account, password, racial) VALUES ('$sex', '$id', '$passwd', '$racial')";
     $UID = mysql_query("SELECT UID FROM regist where account = '$id'");
-    
+
     mysql_query("INSERT INTO personal (UID, health, sex, racial, ATK, LV, killer, death, exp) VALUES ('$UID', 100, '$sex', '$racial', 10, 1, 0, 0, 0)");
     echo JSON_encode($Correct["Mode"]);
   }
