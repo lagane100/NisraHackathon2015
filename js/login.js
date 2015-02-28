@@ -9,10 +9,10 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       success: function(data) {
-        alert("test");
+        alert(data["Mode"]);
       },
-      error: function() {
-        alert("1234");
+      error: function(data) {
+        alert(data["Mode"]);
       }
     });
   });
