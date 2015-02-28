@@ -1,7 +1,7 @@
 <?php
   require 'connect.php';
-  $id = '1234';//mysql_real_escape_string($_POST["id"]);
-  $passwd = 'qwer';//mysql_real_escape_string($_POST["passwd"]);
+  $id = "1234";//mysql_real_escape_string($_POST["id"]);
+  $passwd = "qwer";//mysql_real_escape_string($_POST["passwd"]);
   $Correct = array("Mode"=>'SUCCESS');
   $Wrong = array("Mode"=>'ERROR');
   $result = mysql_query("SELECT account,password,UID FROM regist WHERE account = '$id' and password = '$passwd'");
