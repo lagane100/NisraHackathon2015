@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-h2.pos_right
-{
-position:relative;
-left:600px
-
-}
-.fl{float:left;display:inline;}
-.fr{float:right;display:inline;}
-.leftcolSup{width:450px;height:320px;}
-.leftcol{width:450px;height:40px;}
-.rightcol{width:90px;height:40px;}
-.main{height:1000px;background-color:blue;}
-.content{width:900px;margin:10px auto;}
-.cl{clear:both;}
-</style>
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Information Page</title>
-   <script language="javascript">
-		 function showText(val)
-{
-  if (val)
-   document.all.RoomPassword.style.display = "inline";
-  else
-  {
-   document.all.RoomPassword.value = "";
-   document.all.RoomPassword.style.display = "none";
-  }
-}
-
-	</script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/room.css">
 </head>
@@ -61,49 +33,44 @@ left:600px
       </div>
       <div id="div2"  class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">遊戲規則</h3>
-          </div>
-          <div class="panel-body">
-          </div>
+          <h3 class="panel-title">遊戲規則</h3>
+        </div>
+        <div class="panel-body">
+        </div>
       </div>
     </div>
     <div class="right-div">
       <div class="panel panel-default">
         <!-- Default panel contents -->
-		<div class="fl leftcolSup">
-        <div class="panel-heading">聊天室</div>
-		</div>
-        <div class="panel-body" style="visibility:hidden">
-		</div>
-		
+		      <div class="fl leftcolSup">
+            <div class="panel-heading">聊天室</div>
+		      </div>
+          <div class="panel-body" style="visibility:hidden">
+          </div>
+          <!-- Table -->
+          <table class="table">
 
-        <!-- Table -->
-        <table class="table">
-         
-        </table>
-</div>
+          </table>
+      </div>
 	<div id="B">
 		<p>Enter Your Message</p>
 		<div class="input-group" class = "content" >
 		<div class="fl leftcol"><input name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
 			</div>
 		<div class="fr rightcol"><input class="B" id="loginBtn" type="submit" name="enter" value="Enter"></li> </div>
-		
+
 		<input class="B" id="loginBtn" type="submit" name="answer" value="Answer"></li>
-		
+
 		<input class="B" id="loginBtn" type="submit" name="ask" value="Ask"></li>
 
 		</div>
-		
-            
+
+
         </div>
 		<input class="btn btn-default" id="loginBtn" type="submit" name="surrender " value="Surrender ">
-		
+
 	</div>
     </div>
-	
-
-
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
