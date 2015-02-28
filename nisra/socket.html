@@ -12,16 +12,20 @@
       });
 
       $(document).ready(function(){
-        $('#text').keypress(function(e){
+        //$('#text').keypress(function(e){
+        //  socket.emit('client_data', {
+        //    'letter': String.fromCharCode(e.charCode)
+        //  });
+        //});
+        $('#enter').on('click', function(){
           socket.emit('client_data', {
-            'letter': String.fromCharCode(e.charCode)
+            'letter': String.fromCharCode('#text'.charCode)
           });
         });
       });
     </script>
     <div id="date"></div>
     <textarea id="text"></textarea>
-    <button name="enter">enter</button>
-
+    <button name="enter" id="enter">enter</button>
   </body>
 </html>
