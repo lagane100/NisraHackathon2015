@@ -8,15 +8,18 @@
   left:0;
   right:0;
   margin: auto;
-  border: 1px #666 dashed;
 }
 
 #rules {
-  border-style: double;
+  /*border-style: double;*/
   -webkit-flex: 1;
           flex: 1;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.panel {
+  text-align: center;
 }
 
 #login {
