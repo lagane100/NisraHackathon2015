@@ -11,9 +11,7 @@ $(document).ready(function(){
       async: false,
       success: function(data) {
         alert("123");
-      }.complete({
-        alert("1234");
-      });
+      }
     });
   });
 });
