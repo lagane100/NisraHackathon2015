@@ -8,7 +8,7 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       }.complete(function(data){
         alert(data);
-      });
+      })
     });
   });
 });
