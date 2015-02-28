@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+h2.pos_right
+{
+position:relative;
+left:600px
+
+}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.leftcolSup{width:450px;height:320px;}
+.leftcol{width:450px;height:40px;}
+.rightcol{width:90px;height:40px;}
+.main{height:1000px;background-color:blue;}
+.content{width:900px;margin:10px auto;}
+.cl{clear:both;}
+</style>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Information Page</title>
+   <script language="javascript">
+		 function showText(val)
+{
+  if (val)
+   document.all.RoomPassword.style.display = "inline";
+  else
+  {
+   document.all.RoomPassword.value = "";
+   document.all.RoomPassword.style.display = "none";
+  }
+}
+
+	</script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/room.css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-div">
+      <div id="div1" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">玩家資料</h3>
+          </div>
+          <div class="panel-body">
+          <div id="level">
+            <p>等級: 10</p>
+          </div>
+          <div id="racial">
+            <p>種族: 神</p>
+          </div>
+          <div id="status">
+            <p id="blood">100/100</p>
+            <p id="exp">250/450</p>
+          </div>
+          <div id="atk">
+            <p>攻擊力 3(+2)</p>
+          </div>
+        </div>
+      </div>
+      <div id="div2"  class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">遊戲規則</h3>
+          </div>
+          <div class="panel-body">
+		  <p>1.謾罵時請慎選對象</p>
+		  <p>2.種族相剋 (注:突然被打很痛絕對不是遊戲問題)</p>
+		  <p>3.答對時造成攻擊 死亡將會被請出房間 </p>
+		  <p>4.這間房間死亡次數累積到10次 此房間將轉為純聊天室 </p>
+		  <p>5.按下enter鍵是普通聊天 按下ask鍵為發問 ans為回答</p>
+          </div>
+      </div>
+    </div>
+    <div class="right-div">
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+		<div class="fl leftcolSup">
+        <div class="panel-heading">聊天室</div>
+		</div>
+        <div class="panel-body" style="visibility:hidden">
+		</div>
+		
+
+        <!-- Table -->
+        <table class="table">
+         
+        </table>
+</div>
+	<div id="B">
+		<p>Enter Your Message</p>
+		<div class="input-group" class = "content" >
+		<div class="fl leftcol"><input name="InputMessage" type="text" class="form-control" placeholder="InputMessage" aria-describedby="basic-addon1">
+			</div>
+		<div class="fr rightcol"><input class="B" id="loginBtn" type="submit" name="enter" value="Enter"></li> </div>
+		<div class="fl rightcol"><input name="Answer" type="text" class="form-control" placeholder="Answer" aria-describedby="basic-addon1">
+			</div>
+		<input class="B" id="loginBtn" type="submit" name="answer" value="Answer"></li>
+		
+		<input class="B" id="loginBtn" type="submit" name="ask" value="Ask"></li>
+
+		</div>
+		
+            
+        </div>
+		<input class="btn btn-default" id="loginBtn" type="submit" name="surrender " value="Surrender " onClick="javascript:window.open('roomList.html','_self')">
+		<input class="btn btn-default" id="loginBtn" type="submit" name="back " value="Back " onClick="javascript:window.open('roomList.html','_self')">
+		
+	</div>
+    </div>
+	
+
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/room.js"></script>
+</body>
+</html>
