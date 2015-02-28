@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+<meta http-equiv = ""name="name" content="content">
 <?php
   require 'connect.php';
   $id = mysql_real_escape_string($_POST["id"]);
