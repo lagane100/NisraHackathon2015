@@ -34,8 +34,37 @@
 #exp{
 	background-color: yellow;
 }
-#userdata { 
+#userdata {
 
-margin-right:1500px; 
+margin-right:1500px;
 
+}
+
+h2.pos_right{
+	position:relative;
+	left:600px
+}
+.fl{
+	float:left;display:inline;
+}
+.fr{
+	float:right;display:inline;
+}
+.leftcolSup{
+	width:450px;height:320px;
+}
+.leftcol{
+	width:450px;height:40px;
+}
+.rightcol{
+	width:90px;height:40px;
+}
+.main{
+	height:1000px;background-color:blue;
+}
+.content{
+	width:900px;margin:10px auto;
+}
+.cl{
+	clear:both;
 }

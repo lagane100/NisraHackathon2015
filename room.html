@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Information Page</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/room.css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-div">
+      <div id="div1" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">玩家資料</h3>
+          </div>
+          <div class="panel-body">
+          <div id="level">
+            <p>等級: 10</p>
+          </div>
+          <div id="racial">
+            <p>種族: 神</p>
+          </div>
+          <div id="status">
+            <p id="blood">100/100</p>
+            <p id="exp">250/450</p>
+          </div>
+          <div id="atk">
+            <p>攻擊力 3(+2)</p>
+          </div>
+        </div>
+      </div>
+      <div id="div2"  class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">遊戲規則</h3>
+        </div>
+        <div class="panel-body">
+        </div>
+      </div>
+    </div>
+    <div class="right-div">
+      <iframe src="http://128.199.75.83:8001/socket.html" width="400" height="400"></iframe>
+		<input class="btn btn-default" id="loginBtn" type="submit" name="surrender " value="Surrender ">
+
+	</div>
+    </div>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/room.js"></script>
+</body>
+</html>

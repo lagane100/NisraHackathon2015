@@ -47,5 +47,10 @@ serv_io.sockets.on('connection', function(socket) {
 	//get server data
 	socket.on('client_data', function(data) {
 		process.stdout.write(data.letter);
+    caculate(data.letter, data.mode);
 	});
 });
+
+function caculate(letter, mode){
+  
+}

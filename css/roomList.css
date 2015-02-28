@@ -1,34 +1,24 @@
 #container {
-	background-color: pink;
 	width: 100%;
+	padding: 10%;
 	position:absolute;
 }
 
 .left-div {
 	float: left;
 	width: 40%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .right-div {
 	float: left;
 	width: 60%;
+	padding-left: 2%;
 	margin: auto;
 }
 
 #div1 {
 	clear: both;
-}
-
-#B ul li {
-　display:inline;
-}
-#div2 {
-	background-color: orange;
-}
-
-#div3 {
-	background-color: lightblue;
 }
 
 #blood{
@@ -37,8 +27,16 @@
 #exp{
 	background-color: yellow;
 }
-#userdata { 
 
-margin-right:1500px; 
+.input-group {
+	margin: 5px auto;
+}
 
+.radio {
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#pwd {
+	width: 200px;
 }
