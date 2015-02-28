@@ -11,7 +11,7 @@ $(document).ready(function(){
       success: function(data) {
         alert("test");
       }
-      error: function(data) {
+      error: function() {
         alert("1234");
       }
     });
