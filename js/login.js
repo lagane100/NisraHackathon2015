@@ -8,6 +8,7 @@ $(document).ready(function(){
         passwd: ('#Password')[0].value
       },
       dataType: 'json',
+      async: false,
       success: function(data) {
         alert(data);
       }
