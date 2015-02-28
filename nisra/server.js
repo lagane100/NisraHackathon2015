@@ -51,17 +51,17 @@ serv_io.sockets.on('connection', function(socket) {
 	});
 });
 
-function caculate(data){
-  $.ajax({
-    type: "POST",
-    url: "../save.php",
-    data: {
-      data: data
-    },
-    dataType: 'json',
-    async: false,
-    success: function (data){
-      //戰鬥結果
-    }
-  });
-}
+//function caculate(data){
+//  $.ajax({
+//    type: "POST",
+//    url: "../save.php",
+//    data: {
+//      data: data
+//    },
+//    dataType: 'json',
+//    async: false,
+//    success: function (data){
+//      //戰鬥結果
+//    }
+//  });
+//}
