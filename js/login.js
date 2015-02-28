@@ -3,7 +3,7 @@ $(document).ready(function(){
     $.ajax({
       type: "POST",
       url: "login.php",
-      dataType:'json',
+      dataType: 'json',
       async: false,
       data: {
         id: ('#Username')[0].value,
@@ -12,7 +12,7 @@ $(document).ready(function(){
       success: function(data) {
         if(data["Mode"]=="SUCCESS"){
           alert("welcome back");
-          //window.location.replace("roomList.html");
+          window.location.replace("roomList.html");
         }
         else{
           alert("Wrong password or account");
@@ -29,4 +29,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".panel").css("min-height", $("#login").height());
   $("#container").css("min-height", $(".panel").height());
+});
+
+$(document).ready(function(){
+  $('#back').on('click', function(){
+    window.location.replace("index.html");
+  });
 });
