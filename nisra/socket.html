@@ -12,11 +12,6 @@
       });
 
       $(document).ready(function(){
-        //$('#text').keypress(function(e){
-        //  socket.emit('client_data', {
-        //    'letter': String.fromCharCode(e.charCode)
-        //  });
-        //});
         $('#enter').on('click', function(){
           socket.emit('client_data', {
             'letter': $('#text')[0].value
