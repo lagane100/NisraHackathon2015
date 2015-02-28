@@ -47,21 +47,10 @@ serv_io.sockets.on('connection', function(socket) {
 	//get server data
 	socket.on('client_data', function(data) {
 		process.stdout.write(data.letter);
-    //caculate(data.letter);
+    caculate(data.letter, data.mode);
 	});
 });
 
-//function caculate(data){
-//  $.ajax({
-//    type: "POST",
-//    url: "../save.php",
-//    data: {
-//      data: data
-//    },
-//    dataType: 'json',
-//    async: false,
-//    success: function (data){
-//      //戰鬥結果
-//    }
-//  });
-//}
+function caculate(letter, mode){
+  console.log(mode);
+}
