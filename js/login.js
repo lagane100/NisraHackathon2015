@@ -12,6 +12,9 @@ $(document).ready(function(){
       success: function(data) {
         alert("123");
       }
+      error: function(data) {
+        alert("1234");
+      }
     });
   });
 });
